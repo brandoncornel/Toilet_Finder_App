@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- Declares meanMapApp as the starting Angular module -->
+<html class="no-js" ng-app="toiletMapApp">
+<head>
+    <meta charset="utf-8">
+    <title>Toilet Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Holder JS -->
+    <script src="../bower_components/holderjs/holder.js"></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE"></script>
+    <!-- Modernizr -->
+    <script src="../bower_components/modernizr/bin/modernizr"></script>
+    <!-- JS Source -->
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 class="text-muted">Toilet Finder</h1>
+    </div>
+    <!-- Map and Side Panel -->
+    <div class="row content">
+        <!-- Google Map -->
+        <div class="col-md-7">
+            <div id="map"><img src="holder.js/645x645"></div>
+        </div>
+        <!-- Side Panel -->
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <!-- Panel Title -->
+                <div class="panel-heading">
+                    <h2 class="panel-title text-center">Submit a Toilet Spot! <span class="glyphicon glyphicon-map-marker"></span></h2>
+                </div>
+                <!-- Panel Body -->
+                <div class="panel-body">
+                    <!-- Creates Form (novalidate disables HTML validation, Angular will control) -->
+                    <form name ="addForm" novalidate>
+                        <!-- Text Boxes and Other User Inputs. Note ng-model binds the values to Angular $scope -->
+                        <div class="form-group">
+                            <label for="username">Name(ex. Business Name)</label>
+                            <input type="text" class="form-control" id="username" placeholder="McDonalds" ng-model="formData.name" required>
+                        </div>
+                        <label class="radio control-label">Gender</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadio" id="radio_Male" value="Male" ng-model="formData.gender">
+                                Male
+                            </label>
+                        </div>
+                        <div class="radio" required>
+                            <label>
+                                <input type="radio" name="optionsRadio" id="radio_Female" value="Female" ng-model="formData.gender">
+                                Female
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadio" id="radio_Unisex" value="Unisex" ng-model="formData.gender">
+                                Unisex
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Cleanliness Level</label>
+                            <select class="form-control" id ="cleanliness_level" ng-model="formData.cleanliness_level" required>>
+                                <option>Dirty</option>
+                                <option>Medium</option>
+                                <option>Squeeky Clean</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ply_number">Number of Toilet Paper Plys</label>
+                            <input type="number" class="form-control" id="ply_number" placeholder="1" ng-model="formData.ply_number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ply_number">Number of Bathroom Stalls</label>
+                            <input type="number" class="form-control" id="number_bathroom_stalls" placeholder="5" ng-model="formData.number_bathroom_stalls" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Notes</label>
+                            <textarea  type="text" class="form-control" id ="notes" placeholder = "Notes" ng-model="formData.notes" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="latitude">Latitude</label>
+                            <input type="text" class="form-control" id="latitude" value="39.500" ng-model="formData.latitude" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="longitude">Longitude</label>
+                            <input type="text" class="form-control" id="longitude" value="-98.350" ng-model="formData.longitude" readonly>
+                        </div>
+                        <!-- Submit button. Note that its tied to createUser() function from addCtrl. Also note ng-disabled logic which prevents early submits.  -->
+                        <button type="submit" class="btn btn-danger btn-block" ng-disabled="addForm.$invalid">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>
+</body>
+</html>
