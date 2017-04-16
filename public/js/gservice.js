@@ -37,8 +37,8 @@ angular.module('gservice', [])
 
                 // Then initialize the map.
                 initialize(latitude, longitude);
-            }).error(function(){
-                console.log("Error refreshing Google Maps" + error)
+            }).error(function(data){
+                console.log("Error refreshing Google Maps" + data)
             });
         };
 
