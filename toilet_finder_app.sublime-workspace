@@ -1,0 +1,221 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"meetup",
+				"meetupName"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brandoncornel/Desktop/Projects/Toilet_Finder_App"
+	],
+	"file_history":
+	[
+		"/Users/brandoncornel/Desktop/Projects/Toilet_Finder_App/server.js",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Google_Maps/index.html",
+		"/index.html",
+		"/Users/brandoncornel/Desktop/yoo",
+		"/Users/brandoncornel/Desktop/Projects/To-Do-App/client/js/controllers/toDoController.js",
+		"/Users/brandoncornel/Desktop/Projects/To-Do-App/routes/index.js",
+		"/Users/brandoncornel/Desktop/Projects/To-Do-App/server.js",
+		"/Users/brandoncornel/Desktop/Projects/To-Do-App/index/index.js",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Slack_Bot/package.json",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Mean_App/server/controllers/meetupsController.js",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Mean_App/client/controllers/meetupsController.js",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Mean_App/public/views/index.html",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Mean_App/client/views/index.html",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/movies.json",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/routes/index.js",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/views/partials/header.ejs",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/views/home.ejs",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/views/partials/head.ejs",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/views/movie_single.ejs",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/app.js",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/package.json",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/views/partials/scripts.ejs",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Node_App/sample_node_app.sublime-project",
+		"/Users/brandoncornel/Desktop/Projects/Sample_Mean/client/js/app.js",
+		"/Users/brandoncornel/Dropbox/FALL-2016/CMPE-240/Morse-Code-CMPE-240/source/morse.c",
+		"/Users/brandoncornel/Downloads/Labs/Lab3/exercise/source/uart.c",
+		"/Users/brandoncornel/Dropbox/FALL-2016/CMPE-240/Morse-Code-CMPE-240/morse.h",
+		"/Users/brandoncornel/Dropbox/FALL-2016/CMPE-240/Morse-Code-CMPE-240/main.c",
+		"/Users/brandoncornel/Dropbox/FALL-2016/CMPE-240/Morse-Code-CMPE-240/morse.c",
+		"/Users/brandoncornel/Downloads/ShortestPath.java",
+		"/Users/brandoncornel/Downloads/derp.py",
+		"/Users/brandoncornel/Documents/characterToMorseCode(char c){",
+		"/Users/brandoncornel/Downloads/mdl-template-text-only/index.html",
+		"/Users/brandoncornel/Downloads/lab_5/source/main.c",
+		"/Users/brandoncornel/Downloads/lab_5/source/ieee.h",
+		"/Users/brandoncornel/Downloads/lab_5/source/ieee.c",
+		"/Users/brandoncornel/Downloads/exercise 2/uart.c",
+		"/Users/brandoncornel/Downloads/exercise 2/main.c",
+		"/Users/brandoncornel/Downloads/basemap-1.0.7/setup.py",
+		"/Users/brandoncornel/Downloads/uart (1).c",
+		"/Users/brandoncornel/Downloads/spwa-demo-rev01/second.php",
+		"/Users/brandoncornel/Downloads/spwa-demo-rev01/first.htm",
+		"/Users/brandoncornel/Downloads/spwa-demo-rev01/body.php",
+		"/Users/brandoncornel/Dropbox/FALL-2016/CSCI-420/Youtube Data Mining Project/datasets/080327/0.txt",
+		"/Users/brandoncornel/Downloads/exercise/source/main.c",
+		"/Users/brandoncornel/Desktop/Lab2/source/uart.c"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"feature",
+			"Features",
+			"GEOS_Dir"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "toilet_finder_app.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

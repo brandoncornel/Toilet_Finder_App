@@ -1,1 +1,2 @@
-var app = angular.module('toiletMapApp', ['addCtrl', 'geolocation']);
+var app = angular.module('toiletMapApp', ['addCtrl', 'geolocation','gservice']);
+
