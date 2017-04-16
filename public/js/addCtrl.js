@@ -15,7 +15,6 @@ addCtrl.controller('addCtrl', function($scope, $http, $rootScope, geolocation, g
     $scope.$apply(function(){
         $scope.formData.latitude = parseFloat(gservice.clickLat).toFixed(3);
         $scope.formData.longitude = parseFloat(gservice.clickLong).toFixed(3);
-        $scope.formData.htmlverified = "Nope (Thanks for spamming my map...)";
     });
     });
     $scope.addToilet = function(){
