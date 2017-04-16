@@ -11,7 +11,7 @@ var app             = express();
 // Express Configuration
 // -----------------------------------------------------
 // Sets the connection to MongoDB
-mongoose.connect("mongodb://ds161890.mlab.com:61890/heroku_jkxm6hj8");
+mongoose.connect("mongodb://ds161890.mlab.com:61890/heroku_jkxm6hj8/ToiletMapApp");
 
 // Logging and Parsing
 app.use(express.static(__dirname + '/public'));                 // sets the static files location to public
