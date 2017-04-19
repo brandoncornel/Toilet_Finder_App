@@ -97,6 +97,26 @@ var initialize = function(latitude, longitude) {
             center: new google.maps.LatLng(selectedLat, selectedLong)
         });
     }
+    var initialLocation = new google.maps.LatLng(latitude, longitude);
+
+    var marker = new google.maps.Marker({
+        position: initialLocation,
+        animation: google.maps.Animation.BOUNCE,
+        map: map,
+        icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+    });
+
+    if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(pos) {
+        var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+        marker.setPosition(me);
+        map.setZoom(14);
+        map.panTo(marker.position);
+    }, function(error) {
+        // ...
+    });
+    }
+
 
     // Loop through each location in the array and place a marker
     locations.forEach(function(n, i){
@@ -117,18 +137,10 @@ var initialize = function(latitude, longitude) {
     });
 
     // Set initial location as a bouncing red marker
-    var initialLocation = new google.maps.LatLng(latitude, longitude);
-    var marker = new google.maps.Marker({
-        position: initialLocation,
-        animation: google.maps.Animation.BOUNCE,
-        map: map,
-        icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-    });
+  
     lastMarker = marker;
 
-    map.panTo(new google.maps.LatLng(latitude, longitude));
-
-// Clicking on the Map moves the bouncing red marker
+    // Clicking on the Map moves the bouncing red marker
     google.maps.event.addListener(map, 'click', function(e){
         var marker = new google.maps.Marker({
             position: e.latLng,
@@ -144,6 +156,7 @@ var initialize = function(latitude, longitude) {
 
         // Create a new red bouncing marker and move to it
         lastMarker = marker;
+        map.setZoom(14);
         map.panTo(marker.position);
 
         googleMapService.clickLat = marker.getPosition().lat();
